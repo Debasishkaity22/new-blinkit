@@ -339,31 +339,36 @@ header {
     line-height: 18px;
     padding: 10px;
 }
+td:hover{
+    line-height: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+    color:orangered;
+}
+.my_footer>h3{
+    text-align: center;
+}
 /* responsive */
 @media screen and (max-width: 768px) {
     header{
         position:static;
-        border:none;
-        flex-wrap: wrap !important;
     }
-    .my-navbar{
-        flex-direction: column !important;
-      justify-content: center !important;
-        align-items: center !important;
-       
+    nav{
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
     .navbar-left{
-        
         flex-direction: column !important;
-        border: none !important;
-       
+        border:none !important;
+        padding: 30px;
+        height: fit-content;
     }
     .delivery{
-        border:none !important;
+        border:none;
     }
-    
-    .my-nav-search{
-        width:100% !important;
+    #my-nav-search{
+        width:95vw;
+        
     }
     .my-hero-section>img{
         display: none !important;
@@ -371,18 +376,32 @@ header {
     .list_1 .categories {
         margin: auto !important;
     }
-    .my_footer .my_footer_row1 {
-        display: flex;
+    .my-navbar,.my_footer,.my_footer_row1 {
+        display: flex !important;
         flex-direction: column !important;
+        align-items: center !important;
         margin: auto;
     }
-    .row1_1  {
-        margin: auto !important;
+    td{
+        text-align: center;
+        padding:5px !important;
     }
-    .my_footer_row2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center !important;
+    .row1_1 ,.row1_2,.row1_2-head,.my_footer_row2,.download_section{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-top: 20px !important;
+        
+    }
+    .my_footer_row2>p,.download_section>p{
+        width:85vw;
+        margin: auto;
+        text-align: center;
+    }
+    .my_footer_row3{
+        justify-content: space-between;
+        width:90vw;
         margin: auto;
     }
+    
 }
